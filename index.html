@@ -24,9 +24,8 @@
     }
 
     .wrapper {
-      width: 80%; /* Alterado para 80% da largura da tela em telas menores */
-      max-width: 500px; /* Limita a largura máxima a 500px */
-      height: auto; /* Altura automática para se adaptar ao conteúdo */
+      width: 500px;
+      height: 500px;
       position: relative;
       margin: 0 auto;
     }
@@ -71,12 +70,10 @@
 
     #ck1:checked + label,
     #ck2:checked + label {
-      width: 60%; /* Alterado para 60% da largura da tela em telas menores */
-      max-width: 300px; /* Limita a largura máxima a 300px */
-      height: 60%; /* Alterado para 60% da altura da tela em telas menores */
-      max-height: 300px; /* Limita a altura máxima a 300px */
-      border-radius: 50%; /* Mantém a forma redonda em telas menores */
-      line-height: 60%; /* Ajuste para manter o texto centralizado */
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      line-height: 300px;
     }
 
     #ck1 + label {
@@ -94,22 +91,24 @@
     }
 
     #ck3:checked + label {
-      width: 60%; /* Alterado para 60% da largura da tela em telas menores */
-      max-width: 275px; /* Limita a largura máxima a 275px */
-      height: 60%; /* Alterado para 60% da altura da tela em telas menores */
-      max-height: 275px; /* Limita a altura máxima a 275px */
-      bottom: 15%; /* Ajuste para manter a posição na tela em telas menores */
-      left: 50%; /* Ajuste para manter a posição na tela em telas menores */
+      width: 275px;
+      height: 275px;
+      bottom: 96px;
+      left: 162px;
       transform: rotate(45deg);
       line-height: 27px;
     }
 
     span {
-      display: block;
+      display: inline-block;
       text-align: center;
-      font-size: 16px; /* Tamanho de fonte menor para telas menores */
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      margin-left: -100px;
+      width: 200px;
+      font-size: 24px;
       color: #999;
-      margin-top: 10px;
     }
   </style>
 </head>
