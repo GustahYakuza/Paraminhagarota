@@ -6,28 +6,21 @@
   <title>Você é incrível!</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shadows+Into+Light">
   <style>
-    html {
-      display: table;
-      width: 100%;
+    html, body {
       height: 100%;
-      table-layout: fixed;
-    }
-
-    body {
-      display: table-cell;
-      width: 100%;
-      height: 100%;
-      vertical-align: middle;
+      margin: 0;
       font-family: 'Shadows Into Light';
       color: #111;
-      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
 
     .wrapper {
       width: 500px;
       height: 500px;
       position: relative;
-      margin: 0 auto;
     }
 
     input[type="checkbox"] {
@@ -104,8 +97,6 @@
       text-align: center;
       position: absolute;
       bottom: 10px;
-      left: 50%;
-      margin-left: -100px;
       width: 200px;
       font-size: 24px;
       color: #999;
