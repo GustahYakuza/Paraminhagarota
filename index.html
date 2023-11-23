@@ -100,7 +100,7 @@
     }
 
     span {
-      display: inline-block;
+      display: block;
       text-align: center;
       position: absolute;
       bottom: 10px;
@@ -126,6 +126,32 @@
   </div>
 
   <span>(Clique em "EU TE AMO")</span>
+
+  <script>
+    function gerarElogio() {
+      var elogios = [
+        "Você é incrível!",
+        "Seu talento é inspirador!",
+        "Você faz a diferença!",
+        "Sua criatividade é impressionante!",
+        "Você é uma pessoa maravilhosa!",
+        "Seu trabalho é excepcional!"
+      ];
+
+      var elogioAleatorio = elogios[Math.floor(Math.random() * elogios.length)];
+      var elogioContainer = document.getElementById("elogioContainer");
+      
+      var novoElogio = document.createElement("p");
+      novoElogio.textContent = elogioAleatorio;
+      
+      elogioContainer.appendChild(novoElogio);
+    }
+
+    // Gerar um elogio automaticamente ao carregar a página
+    gerarElogio();
+
+    // Você pode adicionar mais chamadas de gerarElogio() para gerar mais elogios automaticamente
+  </script>
 
 </body>
 </html>
