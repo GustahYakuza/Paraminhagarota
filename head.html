@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Você é incrivel!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+
+    #elogioContainer {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Você é perfeita!</h1>
+
+  <div id="elogioContainer"></div>
+
+  <script>
+    function gerarElogio() {
+      var elogios = [
+        "Você é incrível!",
+        "Seu talento é inspirador!",
+        "Você faz a diferença!",
+        "Sua criatividade é impressionante!",
+        "Você é uma pessoa maravilhosa!",
+        "Seu trabalho é excepcional!"
+      ];
+
+      var elogioAleatorio = elogios[Math.floor(Math.random() * elogios.length)];
+      var elogioContainer = document.getElementById("elogioContainer");
+      
+      var novoElogio = document.createElement("p");
+      novoElogio.textContent = elogioAleatorio;
+      
+      elogioContainer.appendChild(novoElogio);
+    }
+
+    // Gerar um elogio automaticamente ao carregar a página
+    gerarElogio();
+
+    // Você pode adicionar mais chamadas de gerarElogio() para gerar mais elogios automaticamente
+  </script>
+
+</body>
